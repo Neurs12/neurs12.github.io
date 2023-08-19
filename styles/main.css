@@ -281,3 +281,18 @@ a:link:active, a:visited:active {
     justify-content: center;
     height: 100vh;
 }
+
+#contact .title {
+    font-size: 34px;
+}
+
+#mailme-btn {
+    display: inline;
+    position: relative;
+    background-color: #cf3f60 !important;
+    border-color: white;
+    font-weight: bold;
+    width: 180px;
+    height: 48px;
+    display: inline-block;
+}

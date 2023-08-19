@@ -36,6 +36,7 @@ for (const element of document.getElementsByTagName("a")) {
 
 openMouseWithTooltip(document.getElementById("projects-btn"), 70);
 openMouseWithTooltip(document.getElementById("skills-btn"), 70);
+openMouseWithTooltip(document.getElementById("mailme-btn"), 70);
 
 function openMouseWithTooltip(element, width) {
     element.addEventListener("mouseover", () => {
