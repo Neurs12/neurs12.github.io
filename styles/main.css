@@ -1,12 +1,29 @@
 @font-face {
     font-family: Inter;
-    src: url(../Inter/Inter-Regular.ttf);
+    src: url(../fonts/Inter/Inter-Regular.ttf);
 }
 
 @font-face {
     font-family: Inter;
-    src: url(../Inter/Inter-Bold.ttf);
+    src: url(../fonts/Inter/Inter-Bold.ttf);
     font-weight: bold;
+}
+
+@font-face {
+    font-family: Source Code Pro;
+    src: url("../fonts/Source Code Pro/SourceCodePro-Regular.ttf");
+}
+
+@font-face {
+    font-family: Source Code Pro;
+    src: url("../fonts/Source Code Pro/SourceCodePro-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Source Code Pro;
+    src: url("../fonts/Source Code Pro/SourceCodePro-Italic.ttf");
+    font-style: italic;
 }
 
 html, body {
@@ -190,6 +207,26 @@ a:link:active, a:visited:active {
     flex-direction: column;
     align-items: center;
     height: 100vh;
+}
+
+#skills .title {
+    margin-top: 140px;
+    font-size: 38px;
+}
+
+#skills .cards-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 900px;
+}
+
+#skills .cards-container .card {
+    background-color: #1E1B1E;
+    border-radius: 24px;
+    border: .5px solid gray;
+    width: 400px;
+    height: 600px;
 }
 
 #projects {
