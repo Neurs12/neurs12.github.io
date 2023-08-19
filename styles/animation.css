@@ -1,11 +1,23 @@
-.fade-animation {
+.fade-animation-hide {
     opacity: 0;
     transition-duration: 500ms;
     transition-timing-function: ease-out;
 }
 
-.fly-animation {
+.fade-animation-show {
+    opacity: 1;
+    transition-duration: 500ms;
+    transition-timing-function: ease-out;
+}
+
+.fly-animation-hide {
     transform: translateY(50%);
+    transition-duration: 500ms;
+    transition-timing-function: ease-out;
+}
+
+.fly-animation-show {
+    transform: translateY(0);
     transition-duration: 500ms;
     transition-timing-function: ease-out;
 }
