@@ -41,15 +41,18 @@
         <section id="skills" class="section-content">
             <h1 class="title fade-animation-hide fly-animation-hide">Skills</h1>
             <div class="cards-container">
-                <div class="card">
-                    <p style="text-align: center; font-size: 52px;">
-                        Front end
+                <div onclick="openFrontendCard();" class="card" id="front-end-skills">
+                    <p style="text-align: center; font-size: 32px; font-family: Source Code Pro;">
+                        Front-end
                     </p>
+                    <img style="position: absolute; bottom: 0;" width="400px" src="assets/waves.svg"/>
                 </div>
-                <div class="card">
-                    <p style="text-align: center; font-size: 52px;">
-                        Back end
+                <div onclick="openBackendCard();" class="card" id="back-end-skills">
+                    <p style="text-align: center; font-size: 32px; font-family: Source Code Pro;">
+                        Back-end
                     </p>
+                    <img style="position: absolute;" width="400" height="400" src="assets/Union.svg"/>
+                    <div style="width: 400px; height: 400px; background: rgb(0,0,0); position: absolute; background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(30,27,30,1) 50%);"></div>
                 </div>
             </div>
         </section>
@@ -99,6 +102,7 @@
         <script src="scripts/rules.js"></script>
         <script src="scripts/mouse.js"></script>
         <script src="scripts/animationOnScroll.js"></script>
+        <script src="scripts/skillsShow.js"></script>
         <script>
             function delayedRedirect(url, millisecond) {
                 setTimeout(() => {

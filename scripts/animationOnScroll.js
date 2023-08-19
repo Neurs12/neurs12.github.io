@@ -1,7 +1,6 @@
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            console.log("AAAAAAAAAA");
             let fadeAnimation = entry.target.querySelectorAll(".fade-animation-hide");
             for (let i = 0; i < fadeAnimation.length; i++) {
                 setTimeout(() => {

@@ -222,11 +222,15 @@ a:link:active, a:visited:active {
 }
 
 #skills .cards-container .card {
+    position: relative;
     background-color: #1E1B1E;
     border-radius: 24px;
     border: .5px solid gray;
     width: 400px;
     height: 600px;
+    overflow: hidden;
+    transition-duration: 250ms;
+    transition-timing-function: ease;
 }
 
 #projects {
