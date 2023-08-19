@@ -33,6 +33,7 @@ html, body {
     scroll-behavior: smooth;
     font-family: Inter;
     color: #FFFFFF;
+    overflow-x: hidden;
     cursor: none;
 }
 
@@ -158,26 +159,25 @@ a:link:active, a:visited:active {
 
 #about-me .welcome {
     text-align: center;
-    display: block;
     width: 626px;
     font-size: 36px;
 }
 
 #about-me .description {
     text-align: center;
-    display: block;
     width: 705px;
     font-size: 20px;
 }
 
 #about-me .horizontal-button-container {
+    margin: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 560px;
 }
 
-#projects-btn {
+#about-me .horizontal-button-container #projects-btn {
     display: inline;
     position: relative;
     background-color: #ffbf3c !important; 
@@ -189,7 +189,7 @@ a:link:active, a:visited:active {
     display: inline-block;
 }
 
-#skills-btn {
+#about-me .horizontal-button-container #skills-btn {
     display: inline;
     position: relative;
     background-color: #00c39a !important;
@@ -229,6 +229,26 @@ a:link:active, a:visited:active {
     width: 400px;
     height: 600px;
     overflow: hidden;
+    transition-duration: 250ms;
+    transition-timing-function: ease;
+}
+
+#skills #front-end-skills {
+    position: absolute;
+    top: 450px;
+    pointer-events: none;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition-duration: 250ms;
+    transition-timing-function: ease;
+}
+
+#skills #back-end-skills {
+    position: absolute;
+    top: 450px;
+    pointer-events: none;
+    opacity: 0;
+    transform: translateX(50%);
     transition-duration: 250ms;
     transition-timing-function: ease;
 }
