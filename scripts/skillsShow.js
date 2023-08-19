@@ -1,27 +1,38 @@
+let frontEndSkills = document.getElementById("front-end-skills");
+let backEndSkills = document.getElementById("back-end-skills");
+
 function openFrontendCard() {
-    document.getElementById("front-end-skills").style.transform = "translateX(-200%)";
-    document.getElementById("front-end-skills").setAttribute("onclick", "closeFrontendCard()");
-    document.getElementById("back-end-skills").style.opacity = "0";
-    document.getElementById("back-end-skills").setAttribute("onclick", "");
+    frontEndSkills.style.transform = "translateX(-200%)";
+    frontEndSkills.setAttribute("onclick", "closeFrontendCard()");
+    frontEndSkills.querySelector("svg").style.opacity = "1";
+
+    backEndSkills.style.opacity = "0";
+    backEndSkills.setAttribute("onclick", "");
 }
 
 function closeFrontendCard() {
-    document.getElementById("front-end-skills").style.transform = "translateX(0)";
-    document.getElementById("front-end-skills").setAttribute("onclick", "openFrontendCard()");
-    document.getElementById("back-end-skills").style.opacity = "1";
-    document.getElementById("back-end-skills").setAttribute("onclick", "openBackendCard()");
+    frontEndSkills.style.transform = "translateX(0)";
+    frontEndSkills.setAttribute("onclick", "openFrontendCard()");
+    frontEndSkills.querySelector("svg").style.opacity = "0";
+
+    backEndSkills.style.opacity = "1";
+    backEndSkills.setAttribute("onclick", "openBackendCard()");
 }
 
 function openBackendCard() {
-    document.getElementById("back-end-skills").style.transform = "translateX(200%)";
-    document.getElementById("back-end-skills").setAttribute("onclick", "closeBackendCard()");
-    document.getElementById("front-end-skills").style.opacity = "0";
-    document.getElementById("front-end-skills").setAttribute("onclick", "");
+    backEndSkills.style.transform = "translateX(200%)";
+    backEndSkills.setAttribute("onclick", "closeBackendCard()");
+    backEndSkills.querySelector("svg").style.opacity = "1";
+
+    frontEndSkills.style.opacity = "0";
+    frontEndSkills.setAttribute("onclick", "");
 }
 
 function closeBackendCard() {
-    document.getElementById("back-end-skills").style.transform = "translateX(0)";
-    document.getElementById("back-end-skills").setAttribute("onclick", "openBackendCard()");
-    document.getElementById("front-end-skills").style.opacity = "1";
-    document.getElementById("front-end-skills").setAttribute("onclick", "openFrontendCard()");
+    backEndSkills.style.transform = "translateX(0)";
+    backEndSkills.setAttribute("onclick", "openBackendCard()");
+    backEndSkills.querySelector("svg").style.opacity = "0";
+
+    frontEndSkills.style.opacity = "1";
+    frontEndSkills.setAttribute("onclick", "openFrontendCard()");
 }
