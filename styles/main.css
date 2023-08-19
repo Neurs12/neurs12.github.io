@@ -154,6 +154,7 @@ a:link:active, a:visited:active {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     height: 100vh;
 }
 
@@ -206,12 +207,12 @@ a:link:active, a:visited:active {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     height: 100vh;
 }
 
 #skills .title {
-    margin-top: 140px;
-    font-size: 38px;
+    font-size: 34px;
 }
 
 #skills .cards-container {
@@ -235,7 +236,6 @@ a:link:active, a:visited:active {
 
 #skills #front-end-skills {
     position: absolute;
-    top: 450px;
     pointer-events: none;
     opacity: 0;
     transform: translateX(-50%);
@@ -245,7 +245,6 @@ a:link:active, a:visited:active {
 
 #skills #back-end-skills {
     position: absolute;
-    top: 450px;
     pointer-events: none;
     opacity: 0;
     transform: translateX(50%);
@@ -259,7 +258,18 @@ a:link:active, a:visited:active {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     height: 100vh;
+}
+
+#projects .title {
+    font-size: 34px;
+}
+
+#projects .projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 #contact {
@@ -268,5 +278,6 @@ a:link:active, a:visited:active {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     height: 100vh;
 }
