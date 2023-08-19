@@ -85,30 +85,6 @@ a:link:active, a:visited:active {
     align-items: center;
 }
 
-.background {
-    width: 100%;
-    position: absolute;
-    z-index: -1;
-}
-
-.background .design-window-left {
-    position: relative;
-}
-
-.background .code-window-right {
-    position: absolute;
-    left: 100%;
-    transform: translateX(-100%);
-}
-
-.background .floating {
-    opacity: .5;
-    position: absolute;
-    top: 20%;
-    left: 35%;
-    transform: translateX(-100%) rotate(10deg);
-}
-
 .navbar {
     position: fixed;
     width: 100%;
@@ -156,12 +132,11 @@ a:link:active, a:visited:active {
 
 #about-me {
     width: 100%;
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    padding-top: 175px;
 }
 
 #about-me .welcome {
@@ -176,4 +151,43 @@ a:link:active, a:visited:active {
     display: block;
     width: 705px;
     font-size: 20px;
+}
+
+#about-me .horizontal-button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 560px;
+}
+
+#projects-btn {
+    display: inline;
+    position: relative;
+    background-color: #ffbf3c !important; 
+    color: #0F0F0F;
+    border-color: white;
+    font-weight: bold;
+    width: 180px;
+    height: 48px;
+    display: inline-block;
+}
+
+#skills-btn {
+    display: inline;
+    position: relative;
+    background-color: #00c39a !important;
+    border-color: white;
+    font-weight: bold;
+    width: 180px;
+    height: 48px;
+    display: inline-block;
+}
+
+#skills {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
 }

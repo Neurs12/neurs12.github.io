@@ -15,7 +15,9 @@
             <svg style="transition-duration: 200ms; transition-timing-function: ease-out;" id="tooltip-icon" height="20" width="20" viewBox="0 -960 960 960"></svg>
         </div>
         <div id="about-me">
-            <img class="fade-animation fly-animation" alt="My avatar" onmouseover="openTooltip('My avatar', 100, 'person');" onmouseout="closeTooltip();" src="assets/Portrait image.svg">
+            <img style="position: absolute; left: 0;" alt="Deisgn window in vector" class="design-window-left" src="assets/Design window.svg"/>
+            <img style="position: absolute; right: 0;" alt="Code window in vector" class="code-window-right" src="assets/Code window.svg"/>
+            <img style="margin-top: 200px;" class="fade-animation fly-animation" alt="My avatar" onmouseover="openTooltip('My avatar', 100, 'person');" onmouseout="closeTooltip();" src="assets/Portrait image.svg">
             <h1 class="welcome fade-animation fly-animation">
                 Hi there! 👋<br>
                 I’m Hoang Huu Trung - A full stack developer from Vietnam.
@@ -23,13 +25,19 @@
             <p class="description fade-animation fly-animation">
                 Always passionate about crafting captivating user interfaces and robust server-side components through coding.
             </p>
-            <a href="#skills" class="btn fade-animation" id="skills-btn" tooltip="Jump" tooltipWidth="70" tooltipIcon="down">
-                <p>My skills</p>
-            </a>
-            <a href="#projects" class="btn fade-animation" id="projects-btn" tooltip="Jump" tooltipWidth="70" tooltipIcon="down">
-                <p>My projects</p>
-            </a>
+            <div class="horizontal-button-container">
+                <a href="#skills" class="btn fade-animation fly-animation" id="skills-btn" tooltip="Jump" tooltipWidth="70" tooltipIcon="down">
+                    <p>My skills</p>
+                </a>
+                <a href="#projects" class="btn fade-animation fly-animation" id="projects-btn" tooltip="Jump" tooltipWidth="70" tooltipIcon="down">
+                    <p>My projects</p>
+                </a>
+            </div>
         </div>
+
+        <div id="skills">
+        </div>
+
         <div class="navbar">
             <div class="backdrop">
                 <h1 class="title">Neurs</h1>
@@ -63,10 +71,6 @@
                     <a href="#contact" class="section hover-underline-animation" type="nav-section">Contact</a>
                 </div>
             </div>
-        </div>
-        <div class="background">
-            <img alt="Deisgn window in vector" class="design-window-left" src="assets/Design window.svg"/>
-            <img alt="Code window in vector" class="code-window-right" src="assets/Code window.svg"/>
         </div>
         <script src="scripts/rules.js"></script>
         <script src="scripts/mouse.js"></script>

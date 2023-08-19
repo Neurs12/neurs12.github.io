@@ -1,30 +1,6 @@
 .btn {
-    box-sizing:border-box;
     text-align: center;
     border-radius: 8px;
     transition-duration: 250ms;
     transition-timing-function: ease-out;
-}
-
-#projects-btn {
-    position: absolute;
-    background-color: #ffbf3c; 
-    color: #0F0F0F;
-    border-color: white;
-    font-weight: bold;
-    width: 180px;
-    height: 48px;
-    top: 680px;
-    transform: translateX(100%);
-}
-
-#skills-btn {
-    position: absolute;
-    background-color: #00c39a;
-    border-color: white;
-    font-weight: bold;
-    width: 180px;
-    height: 48px;
-    top: 680px;
-    transform: translateX(-100%);
 }
