@@ -154,7 +154,7 @@ a:link:active, a:visited:active {
     margin-top: 27px;
 }
 
-.about-me {
+#about-me {
     width: 100%;
     position: absolute;
     display: flex;
@@ -164,23 +164,14 @@ a:link:active, a:visited:active {
     padding-top: 175px;
 }
 
-.about-me .funni {
-    display: flex;
-    transform: rotate(-19deg) translate(-50%, -200%);
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    font-size: 10px;
-}
-
-.about-me .welcome {
+#about-me .welcome {
     text-align: center;
     display: block;
     width: 626px;
     font-size: 36px;
 }
 
-.about-me .description {
+#about-me .description {
     text-align: center;
     display: block;
     width: 705px;

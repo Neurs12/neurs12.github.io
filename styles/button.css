@@ -1,6 +1,4 @@
 .btn {
-    transition-duration: 250ms;
-    transition-timing-function: ease-out;
     border-radius: 8px;
     text-align: center;
     transition-duration: 250ms;

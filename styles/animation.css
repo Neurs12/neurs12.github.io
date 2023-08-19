@@ -1,0 +1,11 @@
+.fade-initial {
+    opacity: 0;
+    transition-duration: 500ms;
+    transition-timing-function: ease-out;
+}
+
+.fly-initial {
+    transform: translateY(50%);
+    transition-duration: 500ms;
+    transition-timing-function: ease-out;
+}

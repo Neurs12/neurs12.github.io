@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Neurs's portfolio</title>
+        <title>Neurs | Fullstack developer</title>
         <link rel="stylesheet" href="styles/main.css"/>
         <link rel="stylesheet" href="styles/button.css"/>
+        <link rel="stylesheet" href="styles/animation.css"/>
     </head>
     <body>
         <div id="mouse"></div>
@@ -13,22 +14,19 @@
             <p style="display: inline-block; overflow: hidden; text-overflow: '|'; white-space: nowrap; color: #0F0F0F; font-size: 15px;"></p>
             <svg style="transition-duration: 200ms; transition-timing-function: ease-out;" id="tooltip-icon" height="20" width="20" viewBox="0 -960 960 960"></svg>
         </div>
-        <div class="about-me" id="about-me">
-            <p class="funni">
-                I have no good picture of myself 😶‍🌫️
-            </p>
-            <img onmouseover="openTooltip('My avatar', 100, 'person');" onmouseout="closeTooltip();" src="assets/Portrait image.svg">
-            <h1 class="welcome">
+        <div id="about-me">
+            <img class="fade-initial fly-initial" alt="My avatar" onmouseover="openTooltip('My avatar', 100, 'person');" onmouseout="closeTooltip();" src="assets/Portrait image.svg">
+            <h1 class="welcome fade-initial fly-initial">
                 Hi there! 👋<br>
                 I’m Hoang Huu Trung - A full stack developer from Vietnam.
             </h1>
-            <p class="description">
+            <p class="description fade-initial fly-initial">
                 Always passionate about crafting captivating user interfaces and robust server-side components through coding.
             </p>
-            <a href="#skills" class="btn" id="skills-btn">
+            <a href="#skills" class="btn fade-initial" id="skills-btn">
                 <p>My skills</p>
             </a>
-            <a href="#projects" class="btn" id="projects-btn">
+            <a href="#projects" class="btn fade-initial" id="projects-btn">
                 <p>My projects</p>
             </a>
         </div>
@@ -67,11 +65,12 @@
             </div>
         </div>
         <div class="background">
-            <img class="design-window-left" src="assets/Design window.svg"/>
-            <img class="code-window-right" src="assets/Code window.svg"/>
+            <img alt="Deisgn window in vector" class="design-window-left" src="assets/Design window.svg"/>
+            <img alt="Code window in vector" class="code-window-right" src="assets/Code window.svg"/>
         </div>
         <script src="scripts/rules.js"></script>
         <script src="scripts/mouse.js"></script>
+        <script src="scripts/animation.js"></script>
         <script>
             function delayedRedirect(url, millisecond) {
                 setTimeout(() => {
