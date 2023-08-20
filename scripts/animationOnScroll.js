@@ -28,6 +28,8 @@ const observer = new IntersectionObserver((entries) => {
             }
         }
     });
+}, {
+    threshold: 0.5
 });
 
 const sectionContent = document.querySelectorAll(".section-content");
