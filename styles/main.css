@@ -35,6 +35,7 @@ html, body {
     color: #FFFFFF;
     overflow-x: hidden;
     cursor: none;
+    user-select: none;
 }
 
 a:link, a:visited {
